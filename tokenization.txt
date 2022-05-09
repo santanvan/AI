@@ -1,12 +1,6 @@
-#Objective : Tokenization of word and Sentences with the help of NLTK package.
+#Objective : Tokenization of Sentences with the help of NLTK package.
 
-Sentence tokenizer :
-	from nltk.tokenize import sent_tokenize
-	text = "Hello everyone. Welcome to NLP and the NLTK module introduction"
-	sent_tokenize(text)
-
-
-Word tokenizer :
-	rom nltk.tokenize import word_tokenize
-	text = "Hello everyone. Welcome to NLP and the NLTK module introduction"
-	word_tokenize(text)
+#Sentence tokenizer :
+from nltk.tokenize import sent_tokenize
+text = "Hello everyone. Welcome to NLP and the NLTK module introduction"
+sent_tokenize(text)
