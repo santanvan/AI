@@ -1,7 +1,6 @@
-Objective : Write a program in python for any searching techniques.
-Code :
+#Objective : Write a program in python for any searching techniques.
+#Code :
 
-For binary search -
 
 def binary_search(arr, low, high, a):
 	if high >= low:
