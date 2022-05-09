@@ -1,0 +1,4 @@
+#Word tokenizer :
+from nltk.tokenize import word_tokenize
+text = "Hello everyone. Welcome to NLP and the NLTK module introduction"
+word_tokenize(text)
