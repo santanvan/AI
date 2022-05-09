@@ -1,3 +1,5 @@
+#Objective : Tokenization of Words with the help of NLTK package.
+
 #Word tokenizer :
 from nltk.tokenize import word_tokenize
 text = "Hello everyone. Welcome to NLP and the NLTK module introduction"
