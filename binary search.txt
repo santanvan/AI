@@ -1,0 +1,30 @@
+Objective : Write a program in python for any searching techniques.
+Code :
+
+For binary search -
+
+def binary_search(arr, low, high, a):
+	if high >= low:
+		mid = (high + low) // 2
+	
+		if arr[mid] == a:
+			return mid
+
+		elif arr[mid] > a:                 # If element is smaller than mid, then it can only present in left subarray
+			return binary_search(arr, low, mid - 1, a)
+
+		else:				   # Else the element can only be present in right subarray
+			return binary_search(arr, mid + 1, high, a)
+	
+	else:			     		   # Element is not present in the array
+		return -1
+
+arr = [ 20, 23, 40, 60, 90 ]
+a = 23
+
+# Function call
+result = binary_search(arr, 0, len(arr)-1, a)
+if result != -1:
+	print("Element is present at index", str(result))
+else:
+	print("Element is not present in array")
